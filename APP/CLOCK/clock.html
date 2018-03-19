@@ -1,0 +1,140 @@
+<select class="select-theme">
+	<option>default-theme</option>
+	<option>first-theme</option>
+</select>
+
+<div class="clock">
+	<div class="default-dummy"></div>
+	<div class="clock__arrow clock__hours">
+		<div class="default-theme--hours"></div>
+	</div>
+	<div class="clock__arrow clock__minutes">
+		<div class="default-theme--minutes"></div>
+	</div>
+	<div class="clock__arrow clock__seconds">
+		<div class="default-theme--seconds"></div>
+	</div>
+</div>
+
+<style>
+.clock {
+	border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.default-dummy {
+    background: #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.clock__arrow {
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform-origin: bottom;
+}
+
+.clock__arrow div {
+	height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+	left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.default-theme--hours {
+    background: #000;
+}
+
+.default-theme--minutes {
+    background: blue;
+}
+
+.default-theme--seconds {
+	background: red;
+}
+
+/* FIRST-THEME */
+.first-theme--hours {
+	background: green;
+}
+
+.first-theme--minutes {
+	background: yellow;
+}
+
+.first-theme--seconds {
+	background: orange;
+}
+</style>
+
+<script>
+	clock()
+	function clock() {
+		
+		var time = new Date();
+		var h = time.getHours();
+		var m = time.getMinutes();
+		var s = time.getSeconds();
+		var hoursArrow = document.querySelector(".clock__hours");
+		var minutesArrow = document.querySelector(".clock__minutes");
+		var secondsArrow = document.querySelector(".clock__seconds");	
+		
+		hoursArrow.style.transform = "rotateZ(" + h*30 + "deg)";	
+
+		minutesArrow.style.transform = "rotateZ(" + m*6 + "deg)";
+
+		secondsArrow.style.transform = "rotateZ(" + s*6 + "deg)";
+
+	}
+
+	setInterval(function() { clock() }, 1000)
+
+	var selectTheme = document.querySelector(".select-theme");
+	
+	/* Обращение к нашим стрелкам */
+	var arrowStylyHours = document.querySelector(".clock__hours div");
+	var arrowStylyMinutes = document.querySelector(".clock__minutes div");
+	var arrowStylySeconds = document.querySelector(".clock__seconds div");
+	
+	/* SELECT, Выбор темы оформления */
+	selectTheme.addEventListener("change", function() {
+		arrowStylyHours.classList = "";
+		arrowStylyMinutes.classList = "";
+		arrowStylySeconds.classList = "";
+		
+		arrowStylyHours.classList.add(this.value + "--hours")
+		arrowStylyMinutes.classList.add(this.value + "--minutes")
+		arrowStylySeconds.classList.add(this.value + "--seconds")
+	})
+	
+</script>
+
+
+
+
+
+
+

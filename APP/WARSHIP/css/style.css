@@ -1,0 +1,48 @@
+.field {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	border: 3px solid red;
+}
+
+.field-bot {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	border: 3px solid red;
+	margin-top: 10px;
+}
+
+.water {
+	width: 30px;
+	height: 30px;
+	background: #00abff;
+	border: 1px solid white;
+	box-sizing : border-box;
+}
+
+.ship {
+	width: 30px;
+	height: 30px;
+	background: #ffcf00;
+	border: 1px solid white;
+	box-sizing : border-box;
+}
+
+.ship-bot {
+	width: 30px;
+	height: 30px;
+	background: #00abff;
+	border: 1px solid white;
+	box-sizing : border-box;
+}
+
+.miss {
+	background: #80808069;
+}
+
+.hit {
+	background: red;
+}

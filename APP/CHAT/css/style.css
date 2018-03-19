@@ -1,0 +1,86 @@
+.chat {
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.chat__header {
+  background: #2a79ff;
+  height: 35px;
+  line-height: 35px;
+  padding: 0px 10px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.chat__rows {
+  //position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+}
+
+.chat__row:nth-child(odd) .chat__user-pic {
+  float: left;
+}
+
+.chat__row:nth-child(odd) .chat__message {
+  float: left;
+}
+
+.chat__row:nth-child(even) .chat__user-pic {
+  float: right;
+}
+
+.chat__row:nth-child(even) .chat__message {
+  float: right;
+}
+
+.chat__user-name {
+  color: white;
+  display: inline-block;
+}
+
+.chat__window {
+  background: #fff;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.chat__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  outline: none;
+}
+
+.chat__user-pic {
+  background: url(https://thumb7.shutterstock.com/display_pic_with_logo/1699708/679497559/stock-photo-smiling-girl-with-black-braid-avatar-userpic-dark-forelock-blue-hat-portrait-of-nice-female-679497559.jpg);
+  background-size: 125%;
+  background-position: 50% 40%;
+  width: 30px;
+  height: 30px;
+}
+
+.chat__message {
+  vertical-align: top;
+  background: #f3f3f3;
+  padding: 5px 10px;
+  border-radius: 0px 15px 15px 15px;
+  max-width: 80%;
+  margin-left: 5px;
+  word-wrap: break-word;
+  font-family: Arial;
+}
+
+.chat__wrapper {
+  padding: 10px 10px;
+}

@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.slider__container {
+	overflow: hidden;
+}
+
+.slider__box {
+	width: 10000px;
+}

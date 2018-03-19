@@ -1,0 +1,39 @@
+<div class="clock"></div>
+
+<style>
+.clock {
+	color: white;
+	font-size: 50px;
+	font-family: Arial;
+	text-align: center;
+	margin-top: 100px;
+}
+</style>
+
+<script>
+	
+	function clock() {
+	
+		var time = new Date();
+		var h = time.getHours();
+		var m = time.getMinutes();
+		var s = time.getSeconds();
+		var r = (h * 10.625).toFixed();
+		var g = (m * 4.25).toFixed();
+		var b = (s * 4.25).toFixed();
+
+		document.body.style.background = "rgb(" + r + "," + g + "," + b + ")";
+
+		document.querySelector(".clock").innerHTML = h + ":" + m + ":" + s;
+
+	}
+
+	setInterval(function() { clock() }, 1000)
+</script>
+
+
+
+
+
+
+

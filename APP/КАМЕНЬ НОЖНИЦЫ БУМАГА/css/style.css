@@ -1,0 +1,24 @@
+.values__game {
+	display: flex;
+	justify-content: center;
+}
+
+.values__game div {
+	margin-left: 50px;
+}
+
+.rock {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+.papper {
+	width: 100px;
+	height: 100px;
+	background: green;
+}
+.scissors {
+	width: 100px;
+	height: 100px;
+	background: blue;
+}

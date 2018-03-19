@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+	font-family: Arial;
+}
+
+.checklist__input {
+	width: 70%;
+}
+
+.checklist__button {
+	background: #0f0;
+	display: inline-block;
+}
+
+.checklist__row {
+	background: blue;
+	color: #fff;
+}
