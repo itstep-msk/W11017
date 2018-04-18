@@ -1,18 +1,39 @@
 body {
-	margin: 0;
-	font-family: Arial;
+    margin: 0;
+    background: #335934;
+    font-family: Arial;
 }
 
 .checklist__input {
-	width: 70%;
+    width: 84%;
+    background: #BFC3D9;
+    font-size: 30px;
+    font-weight: bold;
+    height: 40px;
 }
 
 .checklist__button {
-	background: #0f0;
-	display: inline-block;
+    background: #3b683d;
+    display: inline-block;
+    width: 15.6%;
+    height: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    color: #BFC3D9;
+    margin-top: 4px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .checklist__row {
-	background: blue;
-	color: #fff;
+	background: #4e8050;
+    border-top: 1px solid #1F3320;
+    border-radius: 5px 5px 0 0;
+    font-size: 30px;
+}
+
+.checklist__top{
+    margin: 0px auto;
+    width: 1460px;
+    line-height: 40px;
 }
