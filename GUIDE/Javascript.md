@@ -1,6 +1,6 @@
 # DOCS JS
 ## создание переменных
-var a;
+```var a;```
 a = 5;
 var b = 10;
 var element = "<div class='box'></div>"
