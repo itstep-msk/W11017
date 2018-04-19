@@ -1,9 +1,9 @@
 # DOCS JS
 ## создание переменных
 ```var a;```
-a = 5;
-var b = 10;
-var element = "<div class='box'></div>"
+```a = 5;```
+```var b = 10;```
+```var element = "<div class='box'></div>"```
 
 ## Типы данных
 var string = "Привет мир";
