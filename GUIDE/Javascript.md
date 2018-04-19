@@ -1,22 +1,22 @@
 # DOCS JS
 ## создание переменных
-```var a;```
-```a = 5;```
-```var b = 10;```
-```var element = "<div class='box'></div>"```
+`var a;`
+`a = 5;`
+`var b = 10;`
+`var element = "<div class='box'></div>"`
 
 ## Типы данных
 `var string = "Привет мир";`
-var number = 10;
-var boolean = true;
-var varNull = null;
-var varUndefined = undefined;
-var object = {};
+`var number = 10;`
+`var boolean = true;`
+`var varNull = null;`
+`var varUndefined = undefined;`
+`var object = {};`
 
 ## Оператов typeof
-typeof string // string
-typeof 10 // number
-typeof typeof 10 // string
+`typeof string // string`
+`typeof 10 // number`
+`typeof typeof 10 // string`
 
 ## Объекты
 ### обычная переменная - одно значение
