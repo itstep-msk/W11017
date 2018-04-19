@@ -17,7 +17,7 @@ var varUndefined = undefined;
 var object = {};
 </pre>
 
-## Оператов typeof
+## Оператор typeof
 <pre>
 typeof string // string
 typeof 10 // number
