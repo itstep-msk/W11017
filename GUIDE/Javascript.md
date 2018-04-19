@@ -4,8 +4,7 @@
 var a;
 a = 5;
 var b = 10;
-var c = d = e = 15
-var element = "<div class='box'></div>"
+var c = d = e = 15;
 </pre>
 
 ## Типы данных
