@@ -233,22 +233,22 @@ document.querySelector(".block > div"); //
 
 document.querySelectorAll(".block") // 
 Поиск всех элементов и возврат массива
-["<div>1</div>", "<div>2</div>","<div>3</div>",]
+["&lt;div&gt;1&lt;/div>", "&lt;div&gt;2&lt;/div&gt;","&lt;div&gt;3&lt;/div&gt;"]
 
-<div class="block">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-</div>
+&lt;div class="block"&gt;
+	&lt;div&gt;1&lt;/div&gt;
+	&lt;div&gt;2&lt;/div&gt;
+	&lt;div&gt;3&lt;/div&gt;
+&lt;/div&gt;
 </pre>
 
 ### Изменение элемент
 <pre>
-<div class="box">Привет мир</div>
+&lt;div class="box"&gt;Привет мир&lt;/div&gt;
 var box = document.querySelector(".box")
 box.innerHTML = "Пока <b>мир</b>";
 
-<div class="box">Пока <b>мир</b></div>
+&lt;div class="box"&gt;Пока &lt;b&gt;мир&lt;/b&gt;&lt;/div&gt;
 
 console.log(box.innerHTML) // Пока <b>мир</b>
 box.innerHTML = box.innerHTML + " Привет мир"
