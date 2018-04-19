@@ -1,12 +1,13 @@
 # DOCS JS
 ## Создание переменных
-`var a;`
-`a = 5;`
-`var b = 10;`
-`var element = "<div class='box'></div>"`
+`var a;`<br>
+`a = 5;`<br>
+`var b = 10;`<br>
+`var c = d = e = 15`<br>
+`var element = "<div class='box'></div>"`<br>
 
 ## Типы данных
-`<var string = "Привет мир";`<br>
+`var string = "Привет мир";`<br>
 `var number = 10;>`<br>
 `var boolean = true;`<br>
 `var varNull = null;`<br>
