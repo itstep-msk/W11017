@@ -6,12 +6,12 @@
 `var element = "<div class='box'></div>"`
 
 ## Типы данных
-<var string = "Привет мир";`
-`var number = 10;>
-`var boolean = true;`
-`var varNull = null;`
-`var varUndefined = undefined;`
-`var object = {};`
+`<var string = "Привет мир";`<br>
+`var number = 10;>`<br>
+`var boolean = true;`<br>
+`var varNull = null;`<br>
+`var varUndefined = undefined;`<br>
+`var object = {};`<br>
 
 ## Оператов typeof
 `typeof string // string`
