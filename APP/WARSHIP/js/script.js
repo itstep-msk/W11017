@@ -80,21 +80,24 @@ function generateLocation() {
 	randomVX = (Math.random()*10).toFixed();
 	randomVY = (Math.random()*6).toFixed();
 }
-//
+
 if (resultShip == "v") {
+	generateLocation()
 	for (var i = 0; i < 4 ;i++) {
 		startX2 = randomVY;
 		startY2 = randomVX;
 		newMap[randomVY++][randomVX] = 1;
 	}
 }
-//
-if (resultShip == "h") {
+
+if (resultShip == "v") {
+	generateLocation()
 	for (var i = 0; i < 4 ;i++) {
-		newMap[randomHY][randomHX++] = 1;
+		startY2 = randomVY;
+		startX2 = randomVX;
+		newMap[startY2++][startX2] = 1;
 	}
 }
-//
 
 function checkEmpty() {
 	while(newMap[randomVY][randomVX] != 0) {
@@ -102,28 +105,5 @@ function checkEmpty() {
 	}
 	return false;
 }
-if (resultShip == "v") {
-	for (var j = 0; j < 3 ;j++) {
-		newMap[randomVY+j][randomVX] = 1;
-	}
-}
-//
-if (resultShip == "h") {
-	for (var i = 0; i < 3 ;i++) {
-		newMap[randomHY][randomHX++] = 1;
-	}
-}
 
 console.log(newMap)
-/*
-1) Последовательное размешение кораблей
-1-ый 4-х палубный.
-Случаынй выбор вертикальный или горизонтальный
-Если вертикальный не можем опускатся ниже 6-ого массива
-Если горизонтальный не можем общашатся к индексу выше 6-ого массива
-
-
-2) Поиск стартовой точки, если 1 то ищем дальше
-3) Расставляем следующие корабли(3-х палубный)
-
-*/
