@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>getArrayRandomNum</title>
+</head>
+<body>
+
+<script>
+	var fruitsFor = [];
+	var fruitsWhile = [];
+
+	function getArrayFor(arr,n) {
+		var count = 0;
+		for(var i = 0; i < n ;i++) {
+			count++;
+			var random = Math.floor(Math.random()*n)
+			if(arr.indexOf(random) == -1) {
+				arr.push(random);
+			} else {
+				i--;
+			}
+		}
+		//console.log("FOR COUNT: " + count);
+	}
+
+	function getArrayWhile(arr,n) {
+		var count = 0;
+		while(arr.length < n) {
+			count++;
+			var random = Math.floor(Math.random()*n);
+			if(arr.indexOf(random) == -1) {
+				arr.push(random);
+			}
+		}
+		//console.log("WHILE COUNT: " + count);
+	}
+
+	function getStatistics(n) {
+		var resultFor = 0;
+		var resultWhile = 0;
+
+		for(var i = 0; i < n; i++) {
+			var start = +new Date();
+			getArrayFor(fruitsFor,10000);
+			var end = +new Date();
+			resultFor += end - start;
+			fruitsFor = [];
+
+			var start = +new Date();
+			getArrayWhile(fruitsWhile,10000);
+			var end = +new Date();
+			resultWhile += end - start;
+			fruitsWhile = [];
+		}
+		console.log(resultFor - resultWhile)
+	}
+
+	getStatistics(10);
+
+	/*var start = +new Date();
+	getArrayFor(fruitsFor,10000);
+	var end = +new Date();
+	console.log("FOR: " + (end - start))*/
+
+	/*var start = +new Date();
+	getArrayWhile(fruitsWhile,10000);
+	var end = +new Date();
+	console.log("WHILE: " + (end - start))*/
+
+	//console.log(fruits) // [1,23,54,...];
+	/*
+	indexOf возвращает индекс текущего значения если найдет
+	Иначе возвращает -1
+	*/
+	//console.log(fruits.indexOf(40))
+</script>
+
+</body>
+</html>

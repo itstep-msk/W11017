@@ -1,4 +1,4 @@
-body {
+  body {
 	margin: 0;
 	font-family: Arial;
 }
@@ -7,7 +7,7 @@ body {
 	display: inline-block;
 	padding: .625em 1.25em;
 	border: .0625em solid rgba(0,0,0,.1);
-	border-radius: .2em;
+	border-radius: .2em; 
 	box-shadow: 0 .05em .25em rgba(0,0,0, .5);
 	text-shadow: 0 -.05em .05em rgba(0,0,0, .5);
 	outline: none;
