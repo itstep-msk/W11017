@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button</title>
+</head>
+<body>
+
+<style>
+	.button {
+		width: 100px;
+		height: 100px;
+		background: green;
+		border-radius: 50%;
+		position: absolute;
+	}
+
+	.button:after {
+		content: "";
+		display: block;
+		width: 10px;
+		height: 60%;
+		background: yellow;
+		position: absolute;
+		left: 0;
+    	right: 0;
+    	top: 0;
+    	bottom: 0;
+    	margin: auto;
+    	transform: rotateZ(0deg);
+    	transition: all, .25s;
+	}
+
+	.button:before {
+		content: "";
+		display: block;
+		width: 10px;
+		height: 60%;
+		background: yellow;
+		position: absolute;
+		left: 0;
+    	right: 0;
+    	top: 0;
+    	bottom: 0;
+    	margin: auto;
+    	transform: rotateZ(90deg);
+	}
+
+	.button:hover:after {
+		transform: rotateZ(90deg);
+	} 
+</style>
+
+<div class="button"></div>
+
+</body>
+</html>
