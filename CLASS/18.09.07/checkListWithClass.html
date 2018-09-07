@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<input class="text">
+<input class="button" value="+" type="submit">
+
+<script>
+	var text = document.querySelector(".text");
+	var button = document.querySelector(".button");
+
+	function Task(t) {
+		this.task = t
+	}
+
+	var tasks = [];
+
+	button.addEventListener("click", function() {
+		var task = new Task(text.value);
+
+		tasks.push(task);
+		console.log(tasks);
+	})
+</script>
+
+</body>
+</html>

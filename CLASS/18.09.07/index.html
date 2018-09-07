@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLASS</title>
+</head>
+<body>
+
+<script>
+	function Animal(n, a, s) {
+		this.name = n;
+		this.age = a;
+		this.species = s;
+		this.say = function(text) {
+			console.log(this.name + ": " + text);
+		}
+	}
+
+	var dog = new Animal("Шарик", 65, "Собака");
+
+	console.log(dog);
+	console.log(dog.name); // "Шарик"
+	console.log(dog.age); // 65
+	console.log(dog.species); // "Собака"
+	dog.say("Кря")
+</script>
+
+</body>
+</html>

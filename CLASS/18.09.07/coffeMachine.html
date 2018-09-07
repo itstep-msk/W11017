@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coffeMachine</title>
+</head>
+<body>
+
+<script>
+	function CoffeMachine() {
+		var waterAmount = 0;
+
+		this.run = function() {
+			if(waterAmount != 0) {
+				console.log("Начинаем приготовление...");
+				setTimeout(function() {
+					console.log("Ваш кофе готов...")
+				},3000)
+			} else {
+				console.log("Недостаточно воды...")
+			}
+		}
+
+		this.setWaterAmount = function(amount) {
+			if(amount > 1000) {
+				console.log("Вы заливате оч много воды...Нельзя так");
+			} else {
+				waterAmount = amount;
+				console.log("Вы залили: " + waterAmount)
+			}
+		}
+
+		this.getWAterAmount = function() {
+			console.log("Количество воды: " + waterAmount);
+		}
+	}
+
+	var bosch = new CoffeMachine();
+	
+	bosch.run();
+</script>
+
+</body>
+</html>
