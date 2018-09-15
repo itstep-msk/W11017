@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Call</title>
+</head>
+<body>
+
+<script>
+	var user = {
+		name: "Alex"
+	}
+
+	console.log(this) // window
+
+	function hello() {
+		return this.name;
+	}
+
+	console.log(hello())
+	// Метод call первым аргументом принимает объект. Объект, на который будут ссылаться this внутри функции
+	console.log(hello.call(user)) // "Alex"
+</script>
+
+</body>
+</html>

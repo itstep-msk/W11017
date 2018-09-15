@@ -1,0 +1,18 @@
+.fruit {
+	background: green;
+
+	&-apple {
+		color: red;
+	}
+
+	&-orange {
+		font-size: 60px;
+
+		&-yellow {
+			font-weight: bold;
+			background: yellow;
+		}
+
+	}
+
+}

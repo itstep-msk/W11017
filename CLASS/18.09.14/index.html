@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	/*
+	function Animal(n) {
+		this.name = n
+	}
+
+	var dog = new Animal("Sharik");
+
+	*/
+	/*
+	var fruits = {
+		apple: 1,
+		orange: 2
+	}
+
+	var vagetables = fruits;
+	console.log(vagetables)
+	console.log(fruits.apple)
+	vagetables.apple = 10;
+	console.log(fruits)
+
+	var newVeg = {
+		banana: 2
+	};
+
+	for(item in fruits) {
+		console.log(item)
+		newVeg[item] = fruits[item];
+	}
+
+	console.log(newVeg)
+
+	function getExamp(classObj, example) {
+		for(item in classObj) {
+			example[item] = classObj[item];
+		}
+	}
+
+	var newFruit = {};
+
+	getExamp(fruits, newFruit);
+
+	console.log(newFruit);
+	*/
+	////////////// НАСЛЕДОВАНИЕ
+	/*
+	var fruits = {
+		apple: 1,
+		orange: 2
+	}
+
+	var user = {};
+
+	user.__proto__ = fruits;
+
+	console.log(user.apple)
+	user.apple = 10;
+	console.log(fruits);
+	*/
+
+	var fruits = {
+		apple: 10,
+		orange: 20
+	};
+	//var fruits = new Object();
+
+	console.log(Object.keys(fruits)) // ["apple", "orange"];
+	console.log(Object.keys(fruits).length) // ["apple", "orange"];
+
+	String.prototype.reverseString = function() {
+		return this.split("").reverse().join("");
+	}
+
+	String.prototype.importantMethod = function() {
+		return "fuck";
+	}
+
+	console.log("Привет".reverseString())
+	console.log("Привет".importantMethod())
+
+	Number.prototype.inc = function() {
+		var result;
+		result = this;
+		return ++result;
+	}
+
+	fruits.toString = function() {
+		return "Срабатывает toString"
+	}
+	fruits.valueOf = function() {
+		return "Срабатывает valueOf"
+	}
+
+	// При преобразовании объекта к строке вызвается внутренний метод toString
+	alert(fruits);
+
+	// При преобразовании объекта к числу вызвается внутренний метод valueOf
+	console.log(+fruits);
+
+	Object.defineProperty(fruits, "apple", {
+		value: 20,
+		configurable: false, // защита от удаления,
+		writable: false, // защита от редактирования
+		enumerable: false // выдимый/скрытный. При переборе через for in
+	})
+	// Редактирование не сработает
+	fruits.apple = 100
+	console.log(fruits.apple);
+
+	// Удаление не сработает
+	delete fruits.apple
+	console.log(fruits.apple);
+
+	// Само свойство в объекте не видно
+	console.log(fruits);
+
+	//
+	eval("alert('Hola from eval')");
+	//
+
+	/*
+	function gen() {
+		var count = 0;
+		return ++count
+	}
+
+	gen() 1
+	gen() 1
+	gen() 1
+	*/
+
+	function GeneratorNum(n) {
+		var count = n;
+
+		return function() {
+			return ++count;
+		}
+
+		/*
+
+		*/
+	}
+
+	/*
+	GeneratorNum() // function() {return ++count;}
+	GeneratorNum()() // 1
+	GeneratorNum()() // 1
+	GeneratorNum()() // 1
+	*/
+
+	var apple = GeneratorNum(0);
+
+	console.log(apple()) // 1
+	console.log(apple()) // 2
+	console.log(apple()) // 3
+
+	var orange = GeneratorNum(10);
+
+	console.log(orange()) // 11
+	console.log(orange()) // 12
+	console.log(orange()) // 13
+
+	// Передали ссылку на функцию apple
+	var plum = apple
+	console.log(plum()) // 4
+
+</script>
+
+</body>
+</html>

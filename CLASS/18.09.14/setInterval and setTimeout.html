@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>setInterval and setTimeout</title>
+</head>
+<body>
+
+<script>
+	/*
+	setInterval(function() {
+		console.log("Hello from setInterval");
+		loadFromDb();
+	}, 1000)*/
+
+	setTimeout(function tick() {
+		console.log("Hello from setTimeout");
+		// loadFromDb();
+		setTimeout(tick, 1000);
+	}, 1000)
+</script>
+
+</body>
+</html>
