@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy method</title>
+</head>
+<body>
+
+<script>
+	// "Одалживание метода"
+	/*
+	Любой метод можно скопировать в любой объект. Не факт, что он будет корректно работать но скопировать можно.
+	*/
+
+	function calcManyNumber() {
+		// Указываем 0 так как без значение переменная равна undefined и при дальшейших математических условиях undefined будет складыватся с числом.
+		var result = 0;
+
+		for(var i = 0; i < arguments.length; i++) {
+			// Забираем значение из массива и складываем с переменной.
+			result += arguments[i];
+		}
+
+		return result;
+	}
+
+	console.log(calcManyNumber(1,2,3,4,5)); // 15
+
+	function concatenateManyNumber() {
+		arguments.myJoin = [].join;
+		// arguments.myJoin = function join() { code };
+		console.log(arguments);
+		return arguments.myJoin("---");
+	}
+
+	console.log(concatenateManyNumber(1,2,3,4,5)); // 1---2---3---4---5
+
+	// push'им в объект
+
+	var num = {
+		0: "apple",
+		1: "orange",
+		2: "plum",
+		length: 3
+	}
+
+	num.myPush = [].push;
+
+	num.myPush("banana");
+
+	console.log(num); // {0: "apple", 1: "orange", 2: "banana", length: 3, myPush: ƒ}
+</script>
+
+</body>
+</html>
