@@ -19,7 +19,7 @@ body {
     border-radius: 50%;
 }
 
-.minutes {
+.numbers {
 	position: absolute;
     top: 0;
     bottom: 0;
@@ -32,4 +32,24 @@ body {
     height: 50%;
     text-align: center;
     line-height: 50px;
+}
+
+.hours {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    width: 20px;
+    text-align: right;
+}
+
+.minutes {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    width: 20px;
+    text-align: left;
+}
+
+.slash {
+    display: inline-block;
 }
