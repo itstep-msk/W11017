@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue</title>
+</head>
+<body>
+
+<div id="app">
+	<eat v-for="fruit in fruits" v-bind:item="fruit"></eat>
+	<eat v-for="vegetable in vegetables" v-bind:item="vegetable"></eat>
+</div>
+
+<script src="vue.js"></script>
+<script>
+	Vue.component("eat", {
+		props: ["item"],
+		template: "<div> {{ item }} </div>"
+	})
+
+	/*
+	В основе vue лежит компонентный подход.
+	Компонент "похож" на функцию.
+
+	Первый аргумент метода component - название функции
+	Свойство props - список аргументов
+	Свойство template - тело функции
+	Вызов функции путем написание ее ввиде тега на странице (<eat></eat>)
+	Передача аргументов через v-bind:НазваниеАргумента="Значение"
+
+	Все выше описанное создано чтобы дать примерное понятие. Говоря похоже на функцию не означает, что является функцией. Компонент является компонентом.
+	*/
+
+	var app = new Vue({
+		el: "#app",
+		data: {
+			fruits: ["apple", "orange", "plum"],
+			vegetables: ["carrot", "potato", "cucumber"]
+		}
+	})
+</script>
+
+</body>
+</html>

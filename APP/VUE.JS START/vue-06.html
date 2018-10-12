@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue</title>
+</head>
+<body>
+
+<div id="app">
+	<div>{{ message }}</div>
+	<input v-model="message">
+	<!--
+	Деректива v-model позволяет не только связывать данные описанные в объекте data но и делать проксирование данных. Все, что меняется в input'e меняется и в свойстве message. А изменение в свойстве message в свою очередь меняет содержимое div с {{ message }}. Посредником выступает app экземпляр класса Vue.
+	-->
+</div>
+
+<script src="vue.js"></script>
+<script>
+	var app = new Vue({
+		el: "#app",
+		data: {
+			message: "Hello world"
+		}
+	})
+</script>
+
+</body>
+</html>

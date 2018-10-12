@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue</title>
+</head>
+<body>
+
+<style>
+	.apple {
+		background: green;
+	}
+
+	.orange {
+		background: orange;
+	}
+</style>
+
+<div id="app">
+	<span v-bind:title="message" v-bind:class="fruits">Наведи курсором</span>
+	<!-- 
+	Для связывания данных с атрибутами из data используется деректива v-bind
+	Пример правильного синтаксиса
+	v-bind:title="message";
+
+	Пример неправильного
+	title="message" - воспримет содержимое как обычный текст
+	title="{{ message }}" - Error compiling template
+	-->
+</div>
+
+<script src="vue.js"></script>
+<script>
+	var app = new Vue({
+		el: "#app",
+		data: {
+			message: "Hello from attribute title",
+			fruits: "apple"
+		}
+	})
+</script>
+
+</body>
+</html>

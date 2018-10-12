@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue</title>
+</head>
+<body>
+
+<div id="app">
+	<div>{{ message }}</div>
+	<button v-on:click="reverseText">Перевернуть текст</button>
+</div>
+
+<script src="vue.js"></script>
+<script>
+	var app = new Vue({
+		el: "#app",
+		data: {
+			message: "Hello world"
+		},
+		methods: {
+			reverseText: function() {
+				this.message = this.message.split("").reverse().join("");
+			}
+		}
+	})
+	
+</script>
+
+</body>
+</html>

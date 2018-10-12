@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue</title>
+</head>
+<body>
+
+<style>
+	.blue {
+		background: blue;
+	}
+
+	.orange {
+		background: orange;
+	}
+</style>
+
+<div id="app">
+	<input v-bind:style="'border-width:' + tasks.length + 'px'" v-model="text">
+	<button v-on:click="addTask">Добавить</button>
+	<div v-bind:class="tasks.length > 1 ? 'blue':'orange'">
+		<list v-for="task in tasks" v-bind:item="task"></list>
+	</div>
+</div>
+
+<script src="vue.js"></script>
+<script>
+	Vue.component("list", {
+		props: ["item"],
+		template: "<div> {{ item }} </div>"
+	})
+
+	var app = new Vue({
+		el: "#app",
+		data: {
+			tasks: [],
+			text: null
+		},
+		methods: {
+			addTask: function() {
+				this.tasks.push(this.text);
+				this.text = null;
+			}
+		}
+	})
+</script>
+
+</body>
+</html>
