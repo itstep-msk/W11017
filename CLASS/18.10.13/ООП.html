@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ООП</title>
+</head>
+<body>
+
+<script>
+	// ООП ФУНКЦИОНАЛЬНОЕ
+	function CoffeMachine() {
+		var waterAmount = 0;
+
+		this.setWaterAmount = function(amount) {
+			waterAmount = amount
+		}
+	}
+
+	var bosch = new CoffeMachine;
+
+	// ООП ПРОТОТИПНОЕ
+	var AnimalsObj = {
+		legs: 4,
+		head: 1,
+		name: null,
+		say: function(text) {
+			console.log(this.name + ": " + text)
+		}
+	}
+
+	var Dog = {};
+
+	Dog.__proto__ = AnimalsObj;
+
+	console.log(Dog);
+	Dog.name = "Sharik"
+	console.log(Dog.legs); // 4
+	Dog.say("Hola");
+
+	// ООП на классах
+
+	class Animals {
+		constructor(n,a) {
+			this.name = n;
+			this.age = a;
+		}
+
+		say(text) {
+			console.log(this.name + ": " + text)
+		}
+	}
+
+	var sobaken = new Animals("Shar", 999);
+	console.log(sobaken);
+	sobaken.say("Wow");
+
+	class Rabbit extends Animals {
+		jump() {
+			console.log("jump...");
+		}
+	}
+
+	var rabbit = new Rabbit("Banny", 10);
+	console.log(rabbit)
+
+	class Duck extends Animals {
+		constructor(swim,a,n) {
+			super(n,a);
+			this.swim = swim
+		}
+	}
+
+	var duck = new Duck(true,99999,"Donald");
+	console.log(duck) // {name: "Donald", age: 99999, swim: true}
+
+</script>
+
+</body>
+</html>

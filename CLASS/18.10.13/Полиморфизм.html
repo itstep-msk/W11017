@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Позиморфизм</title>
+</head>
+<body>
+
+<script>
+	function Machine() {
+		var enabled = false;
+
+		this.enable = function() {
+			enabled = true;
+		}
+
+		this.disable = function() {
+			enabled = false;
+		}
+	}
+
+	function CoffeMachine() {
+		// var this = {}
+		// Наследование
+		Machine.call(this);
+
+		var waterAmount = 0;
+
+		this.setWaterAmount = function(amount) {
+			waterAmount = amount
+		}
+		// return this
+	}
+
+	var bosch = new CoffeMachine();
+	
+	console.log(bosch)
+</script>
+
+</body>
+</html>
