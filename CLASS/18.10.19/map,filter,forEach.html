@@ -1,0 +1,28 @@
+<script>
+	var arr = [1,2,3,4,5,6,7,8,9,10];
+	var fruits = ["apple","orange","plum"]
+
+	arr.forEach(function(item, index) {
+		console.log(item, index)
+	})
+
+	var filterArr = arr.filter(function(item, index) {
+		if(item > 5) {
+			return item;
+		}
+	})
+
+	var filterMap = arr.map(function(item, index) {
+		if(item > 5) {
+			return item;
+		}
+	})
+
+	var filterFruitsMap = fruits.map(function(item, index) {
+		return item.length;
+	})
+
+	console.log(filterArr) // [6,7,8,9,10]
+	console.log(filterMap) // [undefined, undefined, undefined, undefined, undefined, 6, 7, 8, 9, 10]
+	console.log(filterFruitsMap) // [5, 6, 4]
+</script>

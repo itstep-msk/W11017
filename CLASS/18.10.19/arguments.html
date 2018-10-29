@@ -1,0 +1,10 @@
+<script>
+	function arg() {
+		arguments.join = [].join
+		arguments.push = [].push
+		arguments.push("Василий")
+		console.log(arguments.join("-"))
+	}
+
+	arg(1,2,3,4,5); // 1-2-3-4-5
+</script>

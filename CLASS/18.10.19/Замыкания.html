@@ -1,0 +1,33 @@
+<script>
+	
+	function Generator(n) {
+		var count = n;
+
+		return function() {
+			return ++count;
+		}
+	}
+
+	var gen1 = Generator(0);
+	console.log(gen1()) // 1
+	console.log(gen1()) // 2
+	console.log(gen1()) // 3
+
+	var gen2 = Generator(10);
+	console.log(gen2()) // 11
+	console.log(gen2()) // 12
+	console.log(gen2()) // 13
+
+	// FUN
+
+	function rabbit() {
+		return function() {
+			return function() {
+				return "Maximum deep";
+			}
+		}
+	}
+
+	console.log(rabbit()()())
+
+</script>
