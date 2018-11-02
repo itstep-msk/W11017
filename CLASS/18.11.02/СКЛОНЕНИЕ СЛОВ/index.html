@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Склонение</title>
+</head>
+<body>
+
+<script>
+	function getSklonenie(n) {
+		return n + " Пересад" + ((n < 5) ? (n > 1) ? "ки" : "ка" : "ок");
+		/*
+		if(n < 5) {
+			if(n > 1) {
+				return n + " Пересад" + "ки" // 2 Пересадки
+			} else {
+				return n + " Пересад" + "ка" // 1 Пересадка
+			}
+		} else {
+			return n + " Пересад" + "ок" // 6 Пересадок
+		}
+		*/
+	}
+
+	console.log(getSklonenie(1)) // 1 Пересадка
+	console.log(getSklonenie(3)) // 3 Пересадки
+	console.log(getSklonenie(6)) // 6 Пересадок
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ScrollToTop</title>
+</head>
+<body>
+<style>
+	body {
+		margin: 0;
+	}
+	.content {
+		height: 5000px;
+		background: linear-gradient(180deg, green, red);
+	}
+	.button {
+		width: 100%;
+		font-size: 100px;
+	}
+</style>
+
+<div class="content"></div>
+<button class="button">Вверх</button>
+
+<script>
+	var button = document.querySelector(".button");
+
+	button.addEventListener("click", function() {
+		var pos = button.offsetTop;
+
+
+		var i = setInterval(function() {
+			if(pos <= 0) {
+				clearInterval(i);
+			}
+
+			pos-= 100;
+			console.log(pos)
+			window.scrollTo(0,pos)
+		}, 10)
+	})
+</script>
+</body>
+</html>
