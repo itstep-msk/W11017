@@ -1,0 +1,35 @@
+.skills{
+	/*height: 945px;*/
+	margin-top: 260px;
+}
+
+.skills > article h1{
+	margin: 0;
+	position: relative;
+    font-size: 46px	;
+    text-transform: uppercase;
+    padding-left: 56px;
+}
+
+.skills > article h1:after{
+	content: "";
+	position: absolute;
+	width: 90px;
+	height: 70px;
+	left: 30px;
+	top: -8px;
+	z-index: -1;
+	transform: skewX(-20deg);
+	background: linear-gradient(90deg, #1cc6f9, #55d8ff);
+}
+
+.skills table{
+	width: 100%;
+	margin-top: 100px;
+}
+
+.skills table td{
+	width: 25%;
+	padding-left: 60px;
+}
+

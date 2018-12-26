@@ -1,0 +1,103 @@
+@media screen and (max-width: 1040px){ 
+	 /*and (orientation: portrait)*/
+
+	.header__slideNav{
+		display: block;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.header__slideNav span{
+		vertical-align: super;
+	
+	}
+
+	.header__list{
+		display: none;
+	}
+
+	header.header nav{
+		/*justify-content: space-between;*/
+	}
+
+	header .container{
+		/*width: 100%;*/
+	}
+
+	.education__info-block__item{
+		width: 80%;
+		/*margin: 0 auto;*/
+   		clear: both;
+	}
+
+	.education__info-block__center-block{
+	    position: absolute;
+    	right: 100px;
+	    top: 60px;
+		height: 643px;
+	}
+
+	.ed-center-point{
+		top: 313px;
+	}
+
+	.education__info-block__item-right{
+		float: unset;
+		margin-top: 293px;
+		padding: 0;
+		border-right: 0px;
+		border-left: 1px solid #1cc6f9;
+	}
+
+	.education__info-block__item-arrow{
+		display: none;
+	}
+
+	.skills{
+		margin-top: 390px;
+	}	
+
+	.gallery__photos *{
+		width: unset;
+	}
+
+	.gallery__photos > div{
+		width: 50%;
+	}
+
+	.gallery__photos img{
+		width: 100%;
+	}
+
+	.gallery__photos{
+		width: 98%;
+	}
+
+}
+
+
+@media screen and (max-width: 900px){ 
+
+	.about__img{
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-width: 980px){ 
+
+}
+
+
+@media screen and (max-width: 550px){ 
+
+	.about__img{
+		display: none;
+	}
+
+	.about article{
+		width: 100%;
+	}
+	
+
+}

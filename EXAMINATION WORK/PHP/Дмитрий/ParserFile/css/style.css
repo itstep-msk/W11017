@@ -1,0 +1,42 @@
+.block{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #C94B4B, #4B134F);
+    color: white;
+}
+.text{
+	position: absolute;
+    top: 140px;
+    left: 450px;
+}
+.uk-button{
+	color: white;
+}
+.uk-button:hover{
+	color: white;
+}
+.form{
+	padding-top: 20px;
+    font-size: 18px;
+
+}
+.parse{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    top:0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #C94B4B, #4B134F);
+    color: white;
+}
+img{
+    margin-left: 10px;
+    margin-top: -13px;
+}

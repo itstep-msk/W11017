@@ -1,0 +1,28 @@
+.workExperience{
+	margin-top: 275px;
+	padding-left: 17px;
+}
+.workExperience-description h1{
+	margin: 0;
+	position: relative;
+    font-size: 46px	;
+    text-transform: uppercase;
+    padding-left: 39px;
+    /*52px*/
+}
+
+.workExperience-description h1:after{
+	content: "";
+	position: absolute;
+	width: 90px;
+	height: 70px;
+	left: 10px;
+	top: -8px;
+	z-index: -1;
+	background: linear-gradient(90deg, #1cc6f9, #55d8ff);
+	transform: skewX(-20deg);
+}
+
+.workExperience-description__header{
+	margin-top: 47px;	
+}

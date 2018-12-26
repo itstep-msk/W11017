@@ -1,0 +1,63 @@
+.container{
+    margin-top: 50px;
+    background: linear-gradient(rgba(230, 100, 101, 0), rgba(3, 169, 244, 0.37));
+    height: 100%;
+
+}
+.block{
+    width: 450px;
+}
+.decode_text{
+    width: 450px !important;
+    height: 90px !important;
+    background:transparent !important;
+    overflow: scroll !important;
+    border: 1px solid #3F51B5 !important;
+    margin-top: 5px !important;
+}
+#text{
+    border: 1px solid #3F51B5;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#code_button{
+    margin-left: 75px;
+}
+.chat_pole{
+    width: 448px;
+    height: 300px;
+    border: 1px solid #3F51B5;
+    overflow: scroll;
+    margin-top: 5px;
+}
+.mes{
+    height: 100%;
+    overflow: auto;
+}
+#code_button{
+    margin-top: 15px;
+
+}
+#decode_button{
+    margin-top: 15px;
+
+}
+.room_number{
+    width: 150px !important;
+    padding-left: 11px !important;
+    border-radius: 10px !important;
+}
+.user_nic{
+    width: 150px !important;
+    padding-left: 55px !important;
+    border-radius: 10px !important;
+}
+.key_number{
+    width: 139px !important;
+    padding-left: 45px !important;
+    border-radius: 10px !important;
+
+}
+.label{
+    color: black;
+}

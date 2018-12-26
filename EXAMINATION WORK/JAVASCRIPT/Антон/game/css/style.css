@@ -1,0 +1,110 @@
+.start_game {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 36px;
+    border: 1px solid black;
+    cursor: pointer;
+}  
+.start_game:hover {
+	background: black;
+	color: white;
+	border: 1px solid red;
+} 
+.main {
+	border: 1px solid black;
+	width: 918px;
+    height: 918px;
+	margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    position: relative;
+}
+.character {
+	width: 50px;
+	height: 50px;
+	background: black;
+	position: absolute;
+	top: 26px;
+	left: 26px;
+}
+.math {
+	position: absolute;
+	text-align: center;
+	top: 140px;
+	left: 25px;
+}
+.field {
+	width: 100px;
+	height: 100px;
+	border: 1px solid green;
+	display: inline-block;
+	vertical-align: top;
+}
+.cube_result {
+	width: 50px;
+	height: 20px;
+	display: inline-block;
+	border: 1px solid black;
+	background: white;
+}
+.button {
+    vertical-align: top;
+}
+.start {
+	color: white;
+	background: red;
+	text-align: center;
+	font-size: 25px;
+	line-height: 100px;
+}
+.finish {
+	color: red;
+	background: olive;
+	text-align: center;
+	font-size: 25px;
+	line-height: 100px;
+}
+.active {
+	border: 1px solid orange;
+}
+.non-active {
+	background: blue;
+}
+
+.controlls {
+	width: 200px;
+	height: 200px;
+	background: black;
+	position: fixed;
+	margin-bottom: -200px;
+}
+.test_left {
+	position: absolute;
+    top: 50px;
+    left: 30px;
+}
+.test_right {
+    position: absolute;
+    top: 50px;
+    left: 130px;
+}
+.test_up {
+    position: absolute;
+    left: 85px;
+}
+.test_down {
+    position: absolute;
+    top: 100px;
+    left: 75px;
+}
+.test {
+	background: yellow;
+}
+.finished {
+	background: white;
+}

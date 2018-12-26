@@ -1,0 +1,76 @@
+.basket--wrapper{
+	width: 90%;
+	margin: 50px auto 0;
+	text-align: center;
+}
+
+.basket--table{
+	width: 90%;
+	font-size: 20px;
+	border: 1px solid gray;
+	padding: 0;
+	margin: 0;
+	border-spacing: 0;
+	border-collapse:collapse;
+}
+
+.basket--table td, .basket--table th{
+	border: 1px solid gray;
+	padding: 10px 5px;
+	margin: 0;
+}
+
+.basket--table td input{
+	border: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+	width: 100%;
+	background: white;
+	color: black;
+}
+
+.basket--table td:not(:first-child), .basket--table th:not(:first-child){
+	width: 30%;
+}
+
+.basket--table td:first-child, .basket--table th:first-child{
+	width: 10%;
+}
+
+.basket--table td:last-child{
+	text-align: center;
+}
+
+.basket--table td:last-child input{
+	margin: 0 auto;
+	outline: none;
+	text-align: right;
+	width: 20%;
+}
+.basket--table td:last-child input::-webkit-outer-spin-button,
+.basket--table td:last-child input::-webkit-inner-spin-button{
+    /*-webkit-appearance: none;*/
+    /*display: block;*/
+	/*width: 10px;*/
+	margin-left: 10px;
+}
+
+#buy{
+	width: 150px;
+	height: 60px;
+	background: #cccccc;
+	border: 0;
+    box-shadow: 0 0 5px -1px black;
+    margin-top: 50px;
+    cursor: pointer;
+	outline: none;
+    font-size: 17px;
+}
+
+#buy:active, #buy::selection, #buy::focus{
+	border: 0;
+}
+
+#buy:active{
+	background: #ababab;
+}

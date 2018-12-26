@@ -1,0 +1,115 @@
+.header{
+	height: 63px;
+	width: 100%;
+	background: #f3f3f3;
+}
+
+.header a:first-child{
+	color: #666;
+	text-decoration: none;
+}
+
+.header > .container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+	height: inherit;
+}
+
+.header-name{
+    font-size: 40px;
+	cursor: pointer;
+    font-weight: bold;
+	margin-left: 120px;
+    text-transform: uppercase;
+}
+
+.header-ico{
+    margin-left: 185px;
+    display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.header-ico a{
+	color: #666;
+	text-decoration: none;
+}
+
+.header-ico a:hover{
+	color: #585858;
+}
+
+.header-search > input:first-child{
+    margin-left: 80px;
+    height: 47px;
+    font-size: 40px;
+    vertical-align: top;
+    width: 500px;
+}
+
+.header-search > input:last-child{
+	margin-left: -5px;
+    height: 47px;
+}
+
+.header-basket{
+	font-size: 49px;
+	margin-right: 95px;
+	cursor: pointer;
+}
+
+.header ul{
+	text-decoration: none;
+	list-style: none;
+}
+
+.header-user{
+	font-size: 49px;
+}
+
+.header-ico > ul > li > i{
+	position: relative;
+	cursor: default;
+}
+
+.header-ico > ul > li > ul{
+	position: absolute;
+	right: 0;
+	background: #f3f3f3;
+	font-size: 40px;
+	top: -999em;
+	opacity: 0;
+	border-top: 1px solid #e5e5e5;
+
+}
+
+.header-ico > ul:hover > li > ul{
+	top: 63px;
+	opacity: 1;
+	border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-ico > ul:hover > li > ul > li:not(.user){
+	cursor: pointer;
+}
+
+.header-ico > ul:hover > li > ul > li:last-child{
+	border-top: 1px solid #e5e5e5;
+}
+
+.header-settings, .adminPanel{
+	border-top: 1px solid #e5e5e5;
+}
+
+.user{
+	cursor: default;
+}
+
+.header form{
+	margin-bottom: 0px;
+}
+

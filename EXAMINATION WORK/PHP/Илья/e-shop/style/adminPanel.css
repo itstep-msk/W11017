@@ -1,0 +1,204 @@
+.admin__header{
+	width: 100%;
+	height: 63px;
+	background: #f3f3f3;
+	display: flex;
+	align-items: center;	
+    text-transform: uppercase;
+}
+
+.admin__header-name{
+	font-size: 40px;
+	cursor: pointer;
+    font-weight: bold;
+    color: #666;
+	margin-left: 120px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.addBody{
+    width: 1260px;
+    margin: 60px  auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	padding: 15px;
+}
+
+.addProduct{
+	width: 500px;
+	height: 810px;
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 60px;
+	border-left: 2px dotted #e5e5e5;
+	background: #fcfcfc;
+}
+
+.addProduct-headline{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 4px solid #e5e5e5;
+}
+
+.addProduct > form > div > input, .addProduct > form > div > select{
+    float: right;
+    width: 250px;
+    height: 34px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.addProduct > form > div > select:not(.typeSelect){
+}
+
+.product-currency{
+	margin-top: 6px;
+}
+
+.productDescriprion{
+	margin-top: 10px;
+	height: 160px;
+}
+
+.addProduct > form > div > textarea{
+	resize: none;
+	width: 250px;
+	float: right;
+}
+
+#file, #photo1, #photo2, #photo3, #photo4, #photo5, #photo6{
+	display: none;
+}
+
+.avatarWrap{
+    margin-top: -10px;
+}
+
+.avatar, .product-photos{
+	float: right;
+    margin-top: 3px;
+    width: 250px;
+}
+
+.product-photosWrap{
+	margin-top: 3px;
+}
+
+.addProduct > form > div:nth-child(5){
+	height: 160px;
+}
+.addProduct > form > div:nth-child(1){
+	margin-top: 14px;
+}
+
+.addProduct > form > div:not(.addProduct-headline){
+	font-size: 30px;
+}
+
+.addProductSubmit{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.addNav{
+	display: inline-block;
+}
+
+.adminDir, .adminList{
+	width: 670px;
+	height: 275px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.addDir, .addList, .removeDir, .removeList, .removeProduct{
+	width: 285px;
+	height: inherit;
+	border-left: 2px dotted #e5e5e5;
+	background: #fcfcfc;
+	padding-right: 30px; 
+	padding-left: 15px; 
+}
+
+.addDir > div, .removeDir > div, .addList > div, .removeList > div, .removeProduct > div{
+	font-size: 27px;
+	font-weight: bold;
+    border-bottom: 4px solid #e5e5e5;
+}
+
+.addDir > form > div, .removeDir > form > div, .addList > form > div, .removeList > form > div{
+	font-size: 22px;
+	margin-top: 20px;
+}
+
+.addDir > form > div > input, .addDirSelect, .removeDirSelect, .removeDirSelect, 
+.addList > form > div > input, .removeListSelect, .removeProduct input:first-child{
+    width: 180px;
+    float: right;
+    outline: none;
+}
+
+.navSubmit{
+	width: 100%;
+	margin-top: 120px;
+}
+
+.navSubmitDir{
+	width: 100%;
+	margin-top: 68px;
+}
+
+.adminList{
+    margin-top: 260px;
+}
+
+.removeProduct > form > div{
+	margin-top: 10px;
+	font-size: 19px;
+}
+.removeProduct{
+	margin-top: 10px;
+}
+
+.orders--wrapper{
+	background: #D9D9D9;
+	width: 70%;
+	margin: 50px auto;
+}
+
+.orders--table{
+	width: 100%;
+	border: 1px solid gray;
+	border-spacing: 0;
+	border-collapse:collapse;
+	color: black;
+}
+
+.orders--table td, .orders--table th{
+	width: 13%;
+	border: 1px solid gray;
+	padding: 10px 5px;
+	margin: 0;
+}
+
+.orders--table td:first-child, .orders--table td:last-child{
+	text-align: center;
+}
+.orders--table td:first-child, .orders--table td:last-child, .orders--table th:first-child, .orders--table th:last-child{
+	width: 1%;
+}
+
+.orders__infoPr{
+	padding: 20px !important;
+}
+
+.orders__product{
+	border-bottom: 1px solid gray;
+	padding: 5px 0;
+}

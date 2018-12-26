@@ -1,0 +1,24 @@
+.template {
+	border: double 3px black;
+	width: 550px;
+}
+.header {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 600;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.time {
+	display: inline-block;
+	color: red;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.news {
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	width: 500px;
+}

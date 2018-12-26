@@ -1,0 +1,740 @@
+body {
+	font-family: 'Herr Von Muellerhoff', cursive;
+	font-family: 'Source Serif Pro', serif;
+	font-family: 'Work Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.first_block  {
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/1.jpg);
+	background-size: 150%;
+    background-position: 50% 0px;
+    height: 959px;
+}
+.first_wrapper {
+	width: 1200px;
+    margin: 0 auto;
+    height: 959px;
+}
+.first_menu {
+	height: 300px;
+	position: relative;
+	font-weight: 600;
+}
+.first_logo {
+	background: url(../img/2-1.png);
+	background-size: cover;
+	height: 180px;
+    width: 180px;
+    top: 7%;
+    position: absolute;
+    left: 43%;
+}
+.first_menu_nav {
+	position: absolute;
+    width: 1200px;
+    height: 50px;
+    bottom: 35px;
+    cursor: pointer;
+}
+.first_nav_link {
+	color: white;
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: 500;
+	padding: 15px 15px;
+    margin-right: 10px;
+    display: inline-block;
+}  
+.first_nav_link:hover {
+	border-bottom: 2px white solid;
+	box-sizing: border-box; 
+}
+.first_nav_link:first-child {
+	margin-left: 100px;
+}
+.first_nav_ico {
+    width: 10px;
+    height: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    display: inline-block;
+} 
+
+.facebook {
+	background: url(../img/facebook.svg);
+}
+.twitter {
+	background: url(../img/twitter.svg);
+}
+.instagram {
+	background: url(../img/instagram.svg);
+}
+.google {
+	background: url(../img/google.svg);
+}
+.buy {
+	background: url(../img/buy.svg);
+	
+}
+.first_nav_ico:first-child {
+	margin-left: 20px;
+}
+.first_nav_button {
+	width: 30px;
+    height: 30px;
+    margin-left: 40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    display: inline-block;
+}
+.first_main_text {
+	color: #fff;
+    text-align: center;
+    margin-top: 140px;
+}
+.first_main_text-big_text {
+	font-size: 80px;
+    font-weight: 700;
+}
+.first_main_text-small_text {
+	width: 65%;
+    margin: 0 auto;
+    margin-top: 7px;
+    line-height: 24px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.first_block_button {
+	display: inline-block;
+	color: white;
+    margin-top: 100px;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 11px 23px;
+    text-align: center;
+    margin-left: 539px;
+    cursor: pointer;
+}
+.first_block_button:hover {
+	background: red;
+}
+.first_block_slider {
+	display: inline-block;
+    width: 65%;
+    margin-top: 206px;
+    margin-left: 538px;
+}
+.first_block_slider_first {
+	width: 40px;
+	height: 5px;
+	background: orange;
+	float: left;
+}
+.first_block_slider_second {
+	width: 40px;
+	height: 5px;
+	background: #ffffff87;
+	margin-left: 10px;
+	float: left;
+}
+.active_slider:hover {
+	box-shadow: 0px 0px 2px 2px rgba(245,8,8,1);
+	cursor: pointer;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.second_block {
+	background: white;
+	background-size: 150%;
+    background-position: 50% 0px;
+    height: 789px;
+}
+.second_block__grid{
+	position: absolute;
+    height: 184px;
+    background: url(../img/6.png);
+    width: 260px;
+    background-size: 130%;
+    top: 1240px;
+}
+.second_block__grid-left {
+	position: absolute;
+    height: 184px;
+    background: url(../img/6.png);
+    width: 370px;
+    background-size: 104%;
+    top: 1240px;
+    right: 60px;
+}
+.second_wrapper {
+	position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    height: 789px;
+}
+.second_left_block {
+	display: inline-block;
+	width: 600px;
+	float:left;
+	height: 789px;
+	position: relative;
+}
+.second_left_block__picture {
+	position: absolute;
+    width: 540px;
+    height: 520px;
+    background: url(../img/4.jpg);
+    background-size: cover;
+    top: 140px;
+    left: 53px;
+    box-shadow: -70px 70px 0px -34px rgba(0,0,0,0.28);
+}
+.second_left_block__play {
+	position: absolute;
+    width: 130px;
+    height: 130px;
+    background: url(../img/play.png);
+    background-size: cover;
+    border-radius: 50px;
+    top: 335px;
+    left: 257px;
+}
+.second_right_block {
+	display: inline-block;
+	width: 600px;
+	float:left;
+	height: 789px;
+	position: relative;
+}
+.second_right_block__caption {
+	position: absolute;
+    width: 480px;
+    height: 200px;
+    color: black;
+    top: 119px;
+    left: 20px;
+}
+.second_right_block__caption_big {
+	font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 121px;
+    color: red;
+}
+.second_right_block__caption_small {
+	font-size: 85px;
+    margin-top: -82px;
+}
+.second_right_block__text {
+	color: #868080;
+    position: absolute;
+    top: 355px;
+    left: 20px;
+    line-height: 24px;
+    text-align: left;
+}
+.second_right_block__buttons {
+	position: absolute;
+    width: 334px;
+    height: 50px;
+    bottom: 141px;
+    left: 20px;
+    cursor: pointer;
+}    
+.second_right_block__button_red {
+	padding: 14px 15px;
+    float: left;
+    background: red;
+    margin-top: 1px;
+    margin-left: 2px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+.second_right_block__button_black {
+	padding: 14px 18px;
+    float: right;
+    background: black;
+    margin-top: 1px;
+    margin-right: 5px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.third_block {
+	height: 493px;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../img/7.jpg);
+    background-size: 100%;
+    background-position: 0px -440px;
+}
+.third_wrapper {
+	width: 1200px;
+    margin: 0 auto;
+    height: 493px;
+    color: white;
+}
+.third_block__caption {
+    text-align: center;
+    padding-top: 135px;
+    font-size: 62px;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+.third_block__small_caption {
+	text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 19px;
+    letter-spacing: 3px;
+}
+.third_block_button {
+    background: red;
+    width: 192px;
+    height: 46px;
+    margin: 54px 512px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 16px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    border-radius: 45px;
+    cursor: pointer;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.forth_block {
+	height: 590px;
+	background: url(../img/11.jpg);
+	/*linear-gradient(to right, #00bf8f, #001510);*/
+}
+.forth_wrapper {
+	width: 1200px;
+    margin: 0 auto;
+    height: 590px;
+}
+.forth_block__picture {
+	position: relative;
+	display: inline-flex;
+	flex-wrap: wrap;
+    width: 370px;
+    height: 390px;
+    margin-top: 100px;
+    margin-right: 23px;
+    justify-content: space-around;
+    border: 10px solid white; 
+    box-sizing: border-box;
+
+}
+.forth_block__picture:first-child {
+	margin-left: 22px;
+}
+.forth_block__picture:last-child {
+	margin-right: 11px;
+}
+.food {
+	background: url(../img/8.jpg);
+    background-size: cover;
+    background-position-x: -80px;
+}
+.drinks {
+	background: url(../img/9.jpg);
+	background-size: 211%;
+    background-position-x: 46%;
+}
+.smoke {
+	background: url(../img/10.jpg);
+}
+.forth_block__picture_border {
+	font-family: 'Source Serif Pro', serif;
+	position: absolute;
+	color: white;
+	font-size: 30px;
+	border: 5px solid white;
+	height: 298px;
+    width: 277px;
+    top: 31px;
+    left: 32px;
+    text-align: center;
+    line-height: 300px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.fifth_block {
+    height: 1157px;
+    background-image: url(../img/12.jpg);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 111%;
+    color: black;
+    background-position-y: 540px;
+}
+.fifth_wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	height: 1157px;
+}
+.fifth_block__caption_block {
+	padding-top: 134px;
+    font-size: 80px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 700;
+}
+.fifth_block__caption_red {
+	color: red;
+	font-weight: 500;
+	font-size: 110px;
+	font-family: 'Herr Von Muellerhoff', cursive;
+	
+}
+.fifth_block__caption_black {
+	font-family: 'Source Serif Pro', serif;
+	letter-spacing: -4px;
+}
+.fifth_block__nav_menu {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 150px;
+    margin-top: 20px;
+}
+.fifth_nav_block {
+	display: inline-block;
+    width: 170px;
+    height: 150px;
+    margin-left: 24px;
+    position: relative;
+    font-family: 'Source Serif Pro', serif;
+}
+.fifth_nav_block__ico {
+	position: absolute;
+	background: url(../img/food.svg);
+	background-size: 100%;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 60px;
+}
+.fifth_nav_block__text {
+	text-align: center;
+    margin-top: 94px;
+    font-weight: 800;
+    color: gray;
+}
+.active {
+	background: url(../img/food_active.svg);
+	background-size: 100%;
+}
+.active_text {
+	color: black;
+	text-shadow: 1px 1px 2px white, 0 0 1em white;
+}
+.fifth_block__food_menu {
+	background: white;
+    height: 615px;
+    margin-top: 18px;
+    margin-right: 7px;
+    width: 1170px;
+    float: right;
+    border-top: 5px solid red;
+    box-sizing: border-box;
+}
+.fifth_block__menu_header {
+	height: 46px;
+}
+.fifth_block__food_menu_block {
+    height: 520px;
+    float: right;
+    width: 1111px;
+    margin-right: 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.food_menu__blocks {
+	margin: 0px;
+	width: 50%;
+	border: white 1px solid;
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+}
+.food_menu__blocks:hover {
+	border: red 1px solid;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.food_menu__blocks_ico {
+	position: absolute;
+	height: 100px;
+    width: 100px;
+    background: url(../img/13.jpg);
+	background-size: cover;
+    background-position-x: 77%;
+    top: 12px;
+    left: 35px;
+    border-radius: 50px;
+}
+.food_menu__blocks_dots {
+	position: absolute;
+	top: 26px;
+    right: 88px;
+}
+.food_menu__blocks_name {
+	position: absolute;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    left: 155px;
+    top: 24px;
+    letter-spacing: -2px;
+}
+.food_menu__blocks_text {
+	position: absolute;
+    top: 50px;
+    left: 154px;
+    line-height: 28px;
+}
+.food_menu__blocks_price {
+	position: absolute;
+	color: red;
+    font-weight: 600;
+    top: 23px;
+    right: 26px;
+    font-size: 18px;
+}
+.fifth_block__menu_header:before {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 112px;
+    background: red;
+    position: absolute;
+    margin-top: -19px;
+    margin-left: 230px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.sixth_block {
+	height: 789px;
+    background: white;
+}
+.sixth_wrapper {
+	width: 1200px;
+    height: 789px;
+    margin: 0 auto
+}
+.sixth_block_caption {
+	height: 300px;
+}
+.sithx_block-caption__left_block {
+	display: inline-block;
+    width: 50%;
+    height: 210px;
+    margin-top: 90px;
+    float: left;
+}
+.sithx_block-caption__right_block {
+	display: inline-block;
+    width: 50%;
+    height: 210px;
+    margin-top: 90px;
+   	float: left;
+}
+.sixth_red_caption {
+	font-family: 'Herr Von Muellerhoff', cursive;
+	margin-left: 25px;
+    margin-top: -1px;
+    font-size: 117px;
+    color: red;
+}
+.sixth_black_caption {
+	font-family: 'Source Serif Pro', serif;	
+	margin-left: 24px;
+    margin-top: -78px;
+    font-size: 85px;
+    font-weight: 600;
+}
+.sithx_block_right__buttons {
+    width: 180px;
+    height: 100px;
+    float: right;
+    margin-top: 92px;
+}
+.sixth_button__prev {
+	border: 2px solid gray;
+    float: left;
+    margin-top: 27px;
+    margin-left: 4px;
+    width: 55px;
+    height: 43px;
+    position: relative;
+}
+.sixth_button__next {
+	border: 2px solid black;
+    float: right;
+    margin-top: 27px;
+    margin-right: 8px;
+    width: 55px;
+    height: 43px;
+    position: relative;
+}
+.sixth_button__text_prev {
+	position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: gray;
+    top: 11px;
+    left: 20px;
+    background: white;
+}
+.sixth_button__text_next {
+	position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    top: 11px;
+    right: 18px;
+    background: white;
+}
+.sixth_block_content {
+    height: 420px;
+}
+.sixth_block_content__boxes {
+	width: 269px;
+    height: 340px;
+    background: white;
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 3px;
+    margin-left: 23px;
+}
+.sixth_block_content__picture {
+	background: url(../img/14.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 340px;
+    position: relative;
+}
+.sixth_picture_border {
+	position: absolute;
+	position: absolute;
+    width: 231px;
+    height: 301px;
+    border: 6px solid red;
+    top: 14px;
+    left: 13px;
+}
+.sixth_block_content__name {
+	text-align: center;
+    margin-top: 15px;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+}
+.active_six_box__text {
+	color: red;
+}
+.active_six_box__border {
+	background: #ff000057;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 300px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.seventh_block {
+	height: 805px;
+	background: url(../img/15.png);
+    background-size: cover;
+}
+.seventh_wrapper {
+	height: 805px;
+	width: 1200px;
+	margin: 0 auto;
+}
+.seventh_block_caption__box {
+	padding-top: 82px;
+    text-align: center;
+}
+.seventh_block_caption__red {
+	font-family: 'Herr Von Muellerhoff', cursive;
+    font-size: 122px;
+    color: red;
+    margin-left: 20px;
+}
+.seventh_block_caption__black {
+	font-family: 'Source Serif Pro', serif;	
+	font-size: 85px;
+    font-weight: 600;
+    margin-top: -82px;
+    margin-left: 24px;
+}
+.seventh_block__content {
+    height: 450px;
+    width: 1171px;
+    margin-left: 23px;
+    margin-top: 32px;
+}
+.seventh_block__content_box {
+    display: inline-block;
+    float: left;
+    margin-right: 30px;
+    width: 370px;
+}
+.seventh_block__content_box:last-child {
+	margin-right: 0px;
+}
+.seventh_block__content_picture {
+    height: 240px;
+    width: 100%;
+}
+.seventh_block__content_small_text-caption {
+	margin-top: 26px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.seventh_block__content_big_text {
+	font-size: 24px;
+    font-weight: 800;
+    margin-top: 7px;
+}
+.seventh_block__content_small_text {
+	margin-top: 13px;
+    font-size: 15px;
+    text-align: left;
+    color: gray;
+}
+.small_text-caption_red {
+	color: red;
+}
+.small_text-caption_black {
+	margin-left: 5px;
+}
+.seven_picture_left {
+	background: url(../img/16.jpg);
+    background-size: cover;
+    background-position-x: -40px;
+}
+.seven_picture_middle {
+	background: url(../img/17.jpg);
+    background-size: cover;
+}
+.seven_picture_right {
+	background: url(../img/18.jpg);
+    background-size: cover;
+    background-position: 0px -6px;
+}

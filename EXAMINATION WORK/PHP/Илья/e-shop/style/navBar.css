@@ -1,0 +1,76 @@
+.navBar{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	background: #f3f3f3;
+	width: 40px;	
+}
+
+.navBar > ul{
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navBar-arrow{
+	border-radius: 0 25px 25px 0;
+	width: 40px;	
+	transition: 1s;
+	height: 270px;
+	text-align: center;
+	font-size: 50px;
+	cursor: pointer;
+	background: #f3f3f3;
+	position: absolute;
+	left: 0;
+}
+
+.navBar > ul:hover > li > div{
+	left: 215px;
+}
+
+.navBar > ul:hover > li > div > div{
+	border-left: 1px solid #e5e5e5;
+
+}
+
+.navBar-arrow > div > img{
+	width: 30px;
+	height: 150px;
+}
+
+.navBar-arrow > div{
+	height: 210px;
+	padding-top: 60px;
+}
+
+.shopList{
+	width: 215px;
+	height: 300px;
+	background: #f3f3f3;
+	position: absolute;
+	left: -215px;
+	transition: 1s;
+	border-radius: 0 0 5px 0;
+}
+
+.navBar > ul > li:hover > ul > div {
+	left: 0;
+}
+
+.shopList > div > span {
+	font-size: 23px;
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+
+.shopList > div{
+	margin-top: 5px;
+}
+
+.shopList ul{
+	margin: 0;
+	list-style: disc;
+	text-transform: lowercase;
+}

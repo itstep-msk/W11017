@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.main {
+		position: relative;
+		width: 600px;
+		height: 600px;	
+		border: 1px solid black;
+	}
+	.small {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background: green;
+		top: 0px;
+	}
+	.big {
+		width: 100px;
+		height: 100px;
+		background: red;
+		display: inline-block;
+		margin-top: 100px;
+	}
+</style>
+<body>
+	<div class="main">
+		<div class="small"></div>
+		<div class="big"></div>
+		<div class="big"></div>
+		<div class="big"></div>
+	</div>
+
+
+	<script>
+		var small = document.querySelector(".small");
+		var big = document.querySelectorAll(".big");
+		var count_h = 0;
+		var count_v = 0;
+
+
+
+		document.addEventListener("keydown", function(e) {
+			if(e.keyCode == 39) {
+				count_v += 10;
+			}
+			if(e.keyCode == 37) {
+				count_v -= 10;
+			}
+			if(e.keyCode == 38) {
+				count_h -= 10;
+			}
+			if(e.keyCode == 40) {
+				count_h += 10
+			}
+			small.style.left = count_v + "px";
+			small.style.top = count_h + "px";
+			coll();
+		})
+		function coll(){
+			for (var i = 0; i < big.length; i++){
+
+				if (small.offsetLeft + small.offsetWidth > big[i].offsetLeft
+					&& small.offsetTop + small.offsetHeight > big[i].offsetTop
+					&& small.offsetLeft < big[i].offsetLeft + big[i].offsetWidth
+					&& small.offsetTop < big[i].offsetTop + big[i].offsetHeight
+					){
+					big[i].style.background = "purple";
+					//small.style.left = big[i].offsetLeft + "px";
+					//small.style.top = big[i].offsetTop + "px";
+				} else {
+					big[i].style.background = "red";
+				}
+			}
+		}
+
+
+	</script>
+</body>
+</html>

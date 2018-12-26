@@ -1,0 +1,93 @@
+header.header {
+	width: 100%;
+	height: 680px;
+	/*display: flex;*/
+	background: black;
+	color: white;
+}
+
+header.header a{
+	color: white;
+	text-decoration: none;
+}
+
+header.header nav{
+	height: 80px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header.header nav > ul {
+    list-style: none;
+    margin-left: 285px;
+    font-size: 15px;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-transform: lowercase;
+    border-right: 1px dashed white;
+    padding: 20px 25px 20px 41px;
+}
+
+header.header nav li {
+    margin-left: 13px;
+	display: inline;
+	position: relative;
+	padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.header__logo{
+	font-size: 25px;
+	margin-left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header__tab-active:after{
+	content: "";
+	position: absolute;
+	width: 30%;
+	height: 10px;
+	border-bottom: 4px solid white;
+	left: 0;
+	bottom: 0;
+}
+
+.header__stats{
+    width: 40px;
+    height: 40px;
+    background: #1cc6f9;
+    margin-left: 27px;
+}
+
+.header__slideNav{
+    display: none;
+}
+
+.header__welcome{
+    margin: 132px 0 0 20px;
+    font-size: 41px;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    line-height: 55px;
+}
+
+.header__mail-button{
+    width: 216px;
+    background: #1cc6f9;
+    margin: 79px 0 0 18px;
+    padding: 8px 24px;
+    text-align: center;
+    font-size: 17px;
+    font-variant: small-caps;
+    cursor: pointer;
+    text-transform: lowercase;
+}
+
+.header__mail-button i{
+    margin-left: -10px;
+    padding-right: 20px;
+}
+

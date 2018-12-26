@@ -1,0 +1,36 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 97%;
+	margin: 0 auto;
+}
+/*@media screen and (max-width: 769px){ 
+}
+@media screen and (min-width: 1024px){ 
+.container{
+	width: 954px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 321px){ 
+
+}
+
+}*/
+
+.block-text{
+    font-size: 14px;
+    line-height: 19px;
+}
+
+/*@media screen and (max-width: 321px){ 
+	h1:not(:last-child){
+		font-size: 37px !important;
+	}
+
+	h1:after:not(:last-child){
+		height: 60px !important;
+	}
+}*/

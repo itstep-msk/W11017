@@ -1,0 +1,71 @@
+.about{
+	height: 715px;
+	padding-top: 80px;
+}
+
+.about nav ul{
+	list-style: none;
+	margin-top: 80px;
+	padding-left: 17px;
+}
+
+.about nav li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.about nav li{
+
+}
+
+.about nav li i{
+	color: black;
+}
+
+.about article{
+	padding-left: 17px;
+    /*width: 390px;*/
+    width: 49%;
+
+}
+
+.about h1{
+	margin: 8px 0 0;
+	position: relative;
+    font-size: 46px	;
+    text-transform: uppercase;
+    padding-left: 39px;
+}
+
+.about h1:after{
+	content: "";
+	position: absolute;
+	background: linear-gradient(90deg, #1cc6f9, #55d8ff);
+	width: 90px;
+	height: 70px;
+	left: 10px;
+	top: -8px;
+	z-index: -1;
+	transform: skewX(-20deg);
+}
+
+.about__text{
+    margin-top: 87px;
+    width: 390px;
+}
+
+.about__contacts{
+    margin-top: 209px;
+    font-size: 16px;
+}
+
+.about__contacts-item{
+	color: #0494C8;
+}
+
+.about__img{
+    float: right;
+    width: 469px;
+}
+
+
